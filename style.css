@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: hsl(30, 54%, 90%);
+    margin: 0;
+    padding: 0;
+}
+ 
+#tempo h3 {
+    color: hsl(332, 51%, 32%);
+}
+ 
+#tempo {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsla(295, 78%, 82%, 0.082);
+}
+ 
+strong {
+    color: hsl(30, 10%, 34%);
+}
+ 
+h1 {
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+ 
+.receita-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+ 
+.receita {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 36px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+ 
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+ 
+.receita section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+ 
+.receita h3 {
+    color: hsl(14, 45%, 36%);
+    margin-top: 0;
+}
+ 
+h3 {
+    font-size: 1.6em;
+    font-family: Serif;
+    font-weight: 700;
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: hsl(14, 45%, 36%);
+}
+ 
+td {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+ 
+/* ============================
+   RESPONSIVO - MOBILE
+   ============================ */
+@media (max-width: 600px) {
+ 
+    body {
+        background-color: #ffffff; /* Fundo branco no mobile, sem o bege */
+    }
+ 
+    .receita {
+        margin: 0;             /* Remove margem lateral */
+        padding: 24px 20px;    /* Padding menor nas laterais */
+        border-radius: 0;      /* Sem bordas arredondadas na tela cheia */
+        box-shadow: none;      /* Sem sombra */
+        max-width: 100%;
+    }
+ 
+    .receita-image {
+        border-radius: 12px;   /* Bordas um pouco menores */
+        margin-bottom: 16px;
+    }
+ 
+    h1 {
+        font-size: 1.75em;     /* Título menor no mobile */
+        margin-bottom: 8px;
+    }
+ 
+    h3 {
+        font-size: 1.3em;
+    }
+ 
+    #tempo {
+        padding: 16px;
+    }
+ 
+    ul, ol {
+        padding-left: 20px;    /* Menos recuo nas listas */
+    }
+ 
+    td {
+        padding: 8px 0;
+        font-size: 0.95em;
+    }
+ 
+    p {
+        font-size: 0.95em;
+    }
+}
+ 
